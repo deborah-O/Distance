@@ -29,18 +29,10 @@ def comp_minimum_distance(points):
             if i == j:
                 continue
             distance = comp_dist(points[i], points[j])
-            if result ==None:
+            if result == None:
                 result = distance
             elif distance < result:
                 result = distance
     return result
 
 
-point1 = (0,0)
-point2 = (1,1)
-print(comp_dist(point1, point2))
-print(comp_dist(point1, point1))
-
-point3 = (1,0)
-list_of_points = [point1, point2, point3]
-print(comp_minimum_distance(list_of_points))
