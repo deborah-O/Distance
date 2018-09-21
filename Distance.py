@@ -23,14 +23,12 @@ def comp_minimum_distance(points):
     of points, compute ditance between all pairs and return the minimum of 
     these distances'''
     
-    distances = []
-    for i in range(len(points)):
-        for j in range(len(points)):
-            if i == j:
-                continue
-            distance = comp_dist(points[i], points[j])
-            distances.append(distance)
-    return min(distances)
+    return min (comp_dist(point1, point2)
+               for point1 in points
+               for point2 in points
+               if point1 != point2)
+        
+        
 
 
 
