@@ -1,6 +1,6 @@
 'Tests for distance.py'
 import math
-from distance import comp_dist, comp_minimum_distance
+from Distance import comp_dist, comp_minimum_distance
 
 def test_compute_distance():
     point1 = (0,0)
